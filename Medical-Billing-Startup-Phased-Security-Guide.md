@@ -24,6 +24,7 @@ This guide is written for **that** combination: **M365 Basic + browser/web workf
 
 **Related docs:**
 
+- `Medical-Billing-M365-Zscaler-Implementation-Guide.md` (**approved:** M365 Business Basic + Zscaler — scope, pricing, step-by-step)  
 - `Medical-Billing-Workstation-Security-Proposal.md` (AWS virtual desktop — strongest “no data on laptop”)  
 - `Medical-Billing-Company-Laptop-Security-Proposal.md` (full company-laptop + Entra/Intune program)
 
@@ -45,7 +46,7 @@ This guide is written for **that** combination: **M365 Basic + browser/web workf
 2. **MFA (2FA)** in Entra ID — included with Basic; enable for every user.  
 3. **Work pattern:** claims and ERAs in **OneDrive/SharePoint** or billing SaaS — **not** on local disk; Excel/Word via **browser** when needed.  
 4. **Company laptops (2–4):** Section 6 hardening **without** relying on BitLocker or Group Policy (see **Section 1.1**).  
-5. **Cloudflare Zero Trust (free tier)** optional — block personal file-sharing sites.  
+5. **Zscaler (ZIA + Client Connector)** — primary web/DLP control (see `Medical-Billing-M365-Zscaler-Implementation-Guide.md`). Cloudflare Zero Trust was an optional interim alternative.  
 6. **Written rules** — Section 5 (no USB/personal cloud/WhatsApp for PHI).
 
 **Indicative annual cost (8 users — M365 only for Phase 1)**
